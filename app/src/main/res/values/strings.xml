@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="mainTitle">Amiga History Quiz</string>
+    <string name="start">Let\'s get started !!!</string>
+
+    <string name="nameQuestions">What\'s your name?</string>
+    <string name="nameHint">\?</string>
+
+    <string name="firstQuestion">In witch year first Amiga personal computer hit the market?</string>
+    <string name="question1answer1_txt">1984</string>
+    <string name="question1answer2_txt">1985</string>
+    <string name="question1answer3_txt">1986</string>
+
+    <string name="secQuestions">What was name of first Amiga.</string>
+    <string name="question2answer1_txt">Amiga 500</string>
+    <string name="question2answer2_txt">Amiga 1000</string>
+    <string name="question2answer3_txt">Amiga 2000</string>
+
+    <string name="thirdQuestions">What was the first 32-bit game console with CD-ROM?</string>
+    <string name="question3answer1_txt">X-Box</string>
+    <string name="question3answer2_txt">PS One</string>
+    <string name="question3answer3_txt">Amiga CD32</string>
+
+    <string name="fourthQuestions">In which model Commodore use AGA graphics chipset.</string>
+
+    <string name="question4answer1_txt">Amiga 600</string>
+    <string name="question4answer2_txt">Amiga 1200</string>
+    <string name="question4answer3_txt">Amiga 4000</string>
+
+    <string name="checkAnswers">Check Your answers!</string>
+
+</resources>
