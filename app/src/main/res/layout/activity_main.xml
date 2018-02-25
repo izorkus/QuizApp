@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/background">
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,7 +21,7 @@
             android:layout_marginBottom="0dp"
             android:text="@string/mainTitle"
             android:textSize="24sp"
-            android:padding="8dp"/>
+            android:padding="@dimen/std_padding"/>
 
         <View
             android:layout_width="340dp"
@@ -42,7 +43,7 @@
             android:layout_gravity="center"
             android:text="@string/start"
             android:textSize="18sp"
-            android:padding="8dp"
+            android:padding="@dimen/std_padding"
             android:layout_marginBottom="8dp"/>
 
         <TextView
@@ -51,7 +52,7 @@
             android:layout_gravity="center"
             android:text="@string/nameQuestions"
             android:textSize="18sp"
-            android:padding="8dp"/>
+            android:padding="@dimen/std_padding"/>
 
         <EditText
             android:id="@+id/firstAnswer"
@@ -69,14 +70,14 @@
             android:gravity="center"
             android:text="@string/firstQuestion"
             android:textSize="18sp"
-            android:padding="8dp"
+            android:padding="@dimen/std_padding"
             />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/question1radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/std_marginBottom"
             android:layout_weight="0"
             android:gravity="center"
             android:orientation="horizontal">
@@ -110,14 +111,14 @@
             android:gravity="center"
             android:text="@string/secQuestions"
             android:textSize="18sp"
-            android:padding="8dp"
+            android:padding="@dimen/std_marginBottom"
             />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/question2radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/std_marginBottom"
             android:layout_weight="0"
             android:gravity="center"
             android:orientation="horizontal">
@@ -150,14 +151,14 @@
             android:gravity="center"
             android:text="@string/thirdQuestions"
             android:textSize="18sp"
-            android:padding="8dp"
+            android:padding="@dimen/std_padding"
             />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/question3radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/std_marginBottom"
             android:layout_weight="0"
             android:gravity="center"
             android:orientation="horizontal">
@@ -190,7 +191,7 @@
             android:gravity="center"
             android:text="@string/fourthQuestions"
             android:textSize="18sp"
-            android:padding="8dp"
+            android:padding="@dimen/std_padding"
             />
 
         <LinearLayout
@@ -224,7 +225,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/std_padding"
             android:onClick="CheckAnswers"
             android:layout_gravity="center"
             android:text="@string/checkAnswers" />
