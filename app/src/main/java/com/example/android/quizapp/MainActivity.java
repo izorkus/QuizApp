@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Grouping all ViewById
-
 
 
     }
@@ -89,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Log.v("MainActivity", "4 user array:" + userCheckAnswers[3][0] + "," + userCheckAnswers[3][1] + "," + userCheckAnswers[3][2]);
 
-        //Checking arrays and making toast
+        //Checking arrays
 
         Context context = getApplicationContext();
         CharSequence text;
@@ -105,14 +103,14 @@ public class MainActivity extends AppCompatActivity {
                     if (!(userCheckAnswers[i][j] == correctAnswers[i][j])) {
                         ++errorCount;
                     }
-                    Log.v("MainActivity", "ErrorConut: " + errorCount + " at i= " + i + " j= " + j);
+                    // Log.v("MainActivity", "ErrorCount: " + errorCount + " at i= " + i + " j= " + j);
                 }
 
             }
 
             text = "Sorry " + userName + "\nYou make " + errorCount + " mistakes...\nTry again";
         }
-
+        // Showing Toast
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
 
