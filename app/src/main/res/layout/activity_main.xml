@@ -222,6 +222,46 @@
                 android:textColor="#616161" />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fifthQuestions"
+            android:textSize="18sp"
+            android:padding="@dimen/std_padding"
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/question5radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/std_marginBottom"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/question5answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question5answer1_txt"
+                android:textColor="#616161" />
+
+            <RadioButton
+                android:id="@+id/question5answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question5answer2_txt"
+                android:textColor="#616161" />
+
+            <RadioButton
+                android:id="@+id/question5answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question5answer3_txt"
+                android:textColor="#616161" />
+        </RadioGroup>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

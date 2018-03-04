@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 {false, false, false},
                 {false, false, false},
                 {false, false, false},
+                {false, false, false},
         };
 
         //Correct answers array
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 {false, true, false},
                 {false, false, true},
                 {false, true, true},
+                {false, false, true},
         };
 
         // Get the name of user
@@ -87,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
 
         //Log.v("MainActivity", "4 user array:" + userCheckAnswers[3][0] + "," + userCheckAnswers[3][1] + "," + userCheckAnswers[3][2]);
 
+        //4 question - take answers to array
+        RadioButton question5answer1_RadioButton = findViewById(R.id.question5answer1);
+        userCheckAnswers[4][0] = question5answer1_RadioButton.isChecked();
+        RadioButton question5answer2_RadioButton = findViewById(R.id.question5answer2);
+        userCheckAnswers[4][1] = question5answer2_RadioButton.isChecked();
+        RadioButton question5answer3_RadioButton = findViewById(R.id.question5answer3);
+        userCheckAnswers[4][2] = question5answer3_RadioButton.isChecked();
+
         //Checking arrays
 
         Context context = getApplicationContext();
@@ -98,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             text = "All answers is correct " + userName + "\nCongratulations !!";
         } else {
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 5; i++) {
                 for (int j = 0; j < 3; j++) {
                     if (!(userCheckAnswers[i][j] == correctAnswers[i][j])) {
                         ++errorCount;
@@ -119,10 +129,12 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup1 = (RadioGroup) findViewById(R.id.question1radioGroup);
         RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.question2radioGroup);
         RadioGroup radioGroup3 = (RadioGroup) findViewById(R.id.question3radioGroup);
+        RadioGroup radioGroup5 = (RadioGroup) findViewById(R.id.question5radioGroup);
 
         radioGroup1.clearCheck();
         radioGroup2.clearCheck();
         radioGroup3.clearCheck();
+        radioGroup5.clearCheck();
 
         if (question4answer1_CheckBox.isChecked()) question4answer1_CheckBox.toggle();
         if (question4answer2_CheckBox.isChecked()) question4answer2_CheckBox.toggle();
