@@ -4,7 +4,9 @@
     <string name="start">Let\'s get started !!!</string>
 
     <string name="nameQuestions">What\'s your name?</string>
-    <string name="nameHint">\?</string>
+    <string name="textHint">\?</string>
+
+    <string name="imageContent">Old Amiga 500 with color CRT display and external floppy disk drive.</string>
 
     <string name="firstQuestion">1. In witch year first Amiga personal computer hit the market?</string>
     <string name="question1answer1_txt">1984</string>
@@ -27,11 +29,13 @@
     <string name="question4answer2_txt">Amiga 1200</string>
     <string name="question4answer3_txt">Amiga 4000</string>
 
-    <string name="fifthQuestions">5. Which model was the last introduced by Commodore.</string>
+    <string name="fifthQuestions">5. Which model was the last introduced by Commodore?</string>
 
     <string name="question5answer1_txt">Amiga 600</string>
     <string name="question5answer2_txt">Amiga 500+</string>
     <string name="question5answer3_txt">Amiga 4000T</string>
+
+    <string name="sixthQuestions">6. What is the name of the graphic file manager for AmigaOS?.</string>
 
     <string name="checkAnswers">Check Your answers!</string>
 

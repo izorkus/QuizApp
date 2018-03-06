@@ -35,7 +35,8 @@
             android:layout_height="240dp"
             android:layout_gravity="center"
             android:padding="16dp"
-            android:src="@drawable/amiga500_system" />
+            android:src="@drawable/amiga500_system"
+            android:contentDescription="@string/imageContent"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,11 +56,11 @@
             android:padding="@dimen/std_padding"/>
 
         <EditText
-            android:id="@+id/firstAnswer"
+            android:id="@+id/userName"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:hint="@string/nameHint"
+            android:hint="@string/textHint"
             android:inputType="textCapSentences"
             android:layout_gravity="center_horizontal"
             android:gravity="center"/>
@@ -261,6 +262,26 @@
                 android:text="@string/question5answer3_txt"
                 android:textColor="#616161" />
         </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sixthQuestions"
+            android:textSize="18sp"
+            android:padding="@dimen/std_padding"
+            />
+
+        <EditText
+            android:id="@+id/question6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/textHint"
+            android:inputType="textCapSentences"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
 
         <Button
             android:layout_width="wrap_content"
